@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="emoji.css">
+</head>
+<body>
+    <h1>CLICK ON BUTTONS AND SEE THE MAGIC</h1>
+    <button id="1" class="btn-16"><span>Sad</span></button>
+    <button id="2" class="btn-5"><span>Smile</span></button>
+
+    <button id="3"class="btn-12"><span>Angry</span></button>
+    <button id="4"class="btn-22"><span>Cry</span></button>
+    <button id="5"class="btn-8"><span>Cute</span></button>
+    
+    <div id="output"></div> 
+<script>
+    
+    document.getElementById("1").onclick = function() 
+    {
+    var outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = '<img src="sad1.jpg">';
+    var audio = new Audio('sad.mp3');
+      audio.play();
+  };
+ 
+  document.getElementById("2").onclick = function() 
+  {
+    var outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = '<img src="Smile.png">';
+    var audio = new Audio('Smile.mp3');
+      audio.play();
+  };
+
+  document.getElementById("3").onclick = function() 
+  {
+    var outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = '<img src="Angry.png">';
+    var audio = new Audio('Angry.mp3');
+      audio.play();
+  };
+  
+  document.getElementById("4").onclick = function() {
+    var outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = '<img src="Cry.png">';
+    var audio = new Audio('Cry.mp3');
+      audio.play();
+  };
+
+  document.getElementById("5").onclick = function() {
+    var outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = '<img src="cute.png">';
+   
+  };
+</script>
+</body>
+</html>
